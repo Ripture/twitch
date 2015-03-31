@@ -218,8 +218,10 @@ mainloop:
 				drawMenuOptionSelect(choice)
 			}
 		case termbox.EventMouse:
-			choice = mouseChoiceDecode(ev.MouseX, ev.MouseY)
-			drawMenuOptionSelect(choice)
+			// choice = mouseChoiceDecode(ev.MouseX, ev.MouseY)
+			// drawMenuOptionSelect(choice)
+			termbox.SetCursor(0, 20)
+			fmt.Printf("x-%v, y-%v", ev.MouseX, ev.MouseY)
 		case termbox.EventError:
 			panic(ev.Err)
 		}
