@@ -1,10 +1,10 @@
 package main
 
 import (
-	"./lib"
 	"encoding/json"
 	"fmt"
 	"github.com/nsf/termbox-go"
+	"github.com/ripture/twitch/lib"
 	"io/ioutil"
 	"math/rand"
 	"net/http"
